@@ -1,11 +1,5 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
-/**
- * Write a description of class banana here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
 public class Banana extends Actor
 {
     
@@ -19,6 +13,7 @@ public class Banana extends Actor
         
         if(isTouching(Hero.class))
         {
+            //Add a game over symbol
             getWorld().removeObject(this);
         }
     }
