@@ -16,6 +16,11 @@ public class Banana extends Actor
         {
             resetBanana();
         }
+        
+        if(isTouching(Hero.class))
+        {
+            getWorld().removeObject(this);
+        }
     }
     
     public void resetBanana()
